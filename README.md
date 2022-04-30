@@ -1,1 +1,1 @@
-# final_project3
+# The KollekTiV - Final Project
