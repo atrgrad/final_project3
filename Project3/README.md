@@ -22,8 +22,8 @@ npm install merkletreejs keccak256 --force
 npm install @alch/alchemy-web3 --force
 npm i @nomiclabs/hardhat-etherscan --force
 
- npx hardhat run scripts/deployContracts.js --network
-
+npx hardhat run scripts/deployContracts.js --network
+npx hardhat compile
 installs npm install hardhat ethers @nomiclabs/hardhat-waffle ethereum-waffle chai @nomiclabs/hardhat-ethers @openzeppelin/contracts dotenv
 
 5) Compile the smart contract
@@ -31,30 +31,10 @@ Before compiliation:
 - ensure whitelist addresseses are set
 - ensure the .env file has the following:
     a) NEXT_PUBLIC_ALCHEMY_RPCURL=url of api setup with https://www.alchemy.com/
-    b) NEXT_PUBLIC_FORMATIC_KEY=pk_test_871FF65535DB9AA2
-    c) NEXT_PUBLIC_DAPP_ID=80ca0f11-a118-4898-b48f-5f5c3c21007c
+    b) NEXT_PUBLIC_FORMATIC_KEY
+    c) NEXT_PUBLIC_DAPP_ID
     d) METAMASK_PRIVATE_KEY=<private key of meta maskwallet>
-    e) ETHERSCAN_API_KEY=K2NBCJ5AJB2499UK7UB7IURUTTT2VMFA94
+    e) ETHERSCAN_API_KEY
 To compile and get the artifacts file:
 
-npx hardhat compile 
-
-
-the smart contract
-
-
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
-https://rinkeby.etherscan.io/address/0xcCE228DA3671347111c6480e07D04a25ABA4eaD5#code
+ 
